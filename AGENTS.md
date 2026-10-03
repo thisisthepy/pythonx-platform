@@ -179,6 +179,12 @@ Status: name reserved, intent recorded. There is no behaviour yet.
 
 ## 12. Rules for this repository
 
+**`pythonx` is a namespace package shared by every pythonx library.** Never add
+`pythonx/__init__.py`: pythonx-compose, pythonx-concurrent, pythonx-graphics and pythonx-platform
+all install into `pythonx`, and an `__init__.py` from any one of them would hide the others. Each
+package owns only `pythonx/<its name>/`. The publish workflow refuses a wheel that contains
+`pythonx/__init__.py`.
+
 1. **Never rename a Kotlin namespace.** Kotlin names reach Python under their own names through the
    binder.
 2. **Device features are implemented in Kotlin, not here.** A feature this package needs that the
