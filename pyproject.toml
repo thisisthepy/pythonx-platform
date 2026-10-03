@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pythonx-platform"
+version = "0.0.1a0"
+description = "Device features for Python apps on Kotlin Multiplatform: a thin Pythonic layer over multiplatform androidx libraries"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+authors = [
+    {name = "BREW (b-re-w)"},
+]
+keywords = ["device", "notifications", "sensors", "kotlin-multiplatform", "python-multiplatform"]
+classifiers = [
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+requires-python = ">= 3.15"
+
+[project.urls]
+Homepage = "https://thisisthepy.github.io/projects/pythonx-platform/"
+Source = "https://github.com/thisisthepy/pythonx-platform"
+Issues = "https://github.com/thisisthepy/pythonx-platform/issues"
+
+[tool.setuptools.packages.find]
+include = ["pythonx.platform*"]
