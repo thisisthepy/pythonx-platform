@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pythonx-platform"
-version = "0.0.1a0"
+version = "0.0.1a1"
 description = "Device features for Python apps on Kotlin Multiplatform: a thin Pythonic layer over multiplatform androidx libraries"
 readme = {file = "README.md", content-type = "text/markdown"}
 license = "Apache-2.0"
